@@ -1,4 +1,4 @@
-# Verdant — Full-Stack E-Commerce App
+# ShopZone
 
 React + TailwindCSS frontend, Node/Express backend, MongoDB via Mongoose, JWT auth.
 
@@ -43,27 +43,10 @@ You have two options. Pick **either** A (local) or B (cloud, no install required
 
 ### Option A: Local MongoDB install
 
-**macOS (Homebrew):**
-```bash
-brew tap mongodb/brew
-brew install mongodb-community@7.0
-brew services start mongodb-community@7.0
-```
-
 **Windows:**
 1. Download the MongoDB Community Server installer from https://www.mongodb.com/try/download/community
 2. Run the installer, keep "Install MongoDB as a Service" checked.
 3. MongoDB will start automatically as a Windows service on `localhost:27017`.
-
-**Linux (Ubuntu/Debian):**
-```bash
-curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor
-echo "deb [signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg] http://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
-sudo apt update
-sudo apt install -y mongodb-org
-sudo systemctl start mongod
-sudo systemctl enable mongod
-```
 
 **Verify it's running:**
 ```bash
